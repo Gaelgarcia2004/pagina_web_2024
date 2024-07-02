@@ -3,43 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacidad en línea</title>
+  <title>Seguridad en línea</title>
+  <!-- Enlace al archivo CSS de Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos personalizados -->
   <style>
+    /* Animación de zoom para las imágenes */
+    .zoom-img:hover {
+      transform: scale(1.05);
+    }
+    /* Fondo de la página */
     body {
-      font-family: Arial, sans-serif;
-      background-image: url('1'); /* URL de tu imagen de fondo */
-      background-size: 1000px; /* Ajusta el tamaño de la imagen para cubrir todo el área */
+      background-image: url('foto6.jpg');
+      background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la página */
       background-position: center; /* Centra la imagen de fondo */
-      color: #f7f7fa;
-      padding: 20px;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    h1 {
-      text-align: center;
-      color: #170a67;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
     }
   </style>
 </head>
 <body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <!-- Logo izquierdo -->
+      <a class="navbar-brand" href="#">
+        <img src="TECNM.jpg" alt="Logo Izquierdo" width="100" height="50">
+      </a>
+      <!-- Logo derecho -->
+      <a class="navbar-brand ml-auto" href="#">
+        <img src="TESSFP.jpg" alt="Logo Derecho" width="100" height="50">
+      </a>
+      <!-- Botón de colapso para pantallas pequeñas -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#recursos">Recursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Sección de recursos -->
+<section id="recursos" class="py-5">
   <div class="container">
-    <h1>Privacidad en línea</h1>
-    <p>
-      Aquí puedes encontrar información detallada sobre cómo proteger tus datos personales y mantener tu privacidad en Internet:
-    </p>
-    <ul>
-      <li>Revisa y ajusta la configuración de privacidad de tus cuentas en redes sociales y otros servicios en línea.</li>
-      <li>No compartas información personal sensible en línea, como tu dirección, número de teléfono o detalles financieros, a menos que sea necesario.</li>
-      <li>Utiliza herramientas de privacidad, como navegadores con funciones de bloqueo de rastreo y extensiones de privacidad.</li>
-      <li>Educa a tus hijos sobre los riesgos de compartir información en línea y supervisa su actividad en Internet.</li>
-    </ul>
-    <img src="a2.webp" alt="Privacidad en línea" style="max-width: 70%; display: block; margin: 20px auto;">
+    <h2 class="text-center mb-5">RECURSOS DE SEGURIDAD VIRTUAL</h2>
+    <div class="row">
+      <!-- Primer recurso: Seguridad Informática -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Seguridad Informática</h5>
+            <p class="card-text">Consejos para proteger tus dispositivos contra virus, malware y ataques cibernéticos.</p>
+            <!-- Enlace a la página de seguridad informática -->
+            <a href="seguridad_informatica.html" class="btn btn-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <!-- Segundo recurso: Privacidad en línea -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Privacidad en línea</h5>
+            <p class="card-text">Cómo proteger tus datos personales y mantener tu privacidad en Internet.</p>
+            <!-- Enlace a la página de privacidad en línea -->
+            <a href="privacidad_en_linea.html" class="btn btn-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <!-- Tercer recurso: Seguridad en redes sociales -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Seguridad en redes sociales</h5>
+            <p class="card-text">Consejos para evitar el robo de identidad y proteger tu información en redes sociales.</p>
+            <!-- Enlace a la página de seguridad en redes sociales -->
+            <a href="seguridad_redes_sociales.html" class="btn btn-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
+
+  <!-- Pie de página -->
+  <footer class="py-4 bg-dark text-white text-center">
+    <div class="container">
+      <p>Carmona_Garcia_Carlos_Gael &copy; 2024 Seguridad en Línea</p>
+    </div>
+  </footer>
+
+  <!-- Enlace al archivo JavaScript de Bootstrap (opcional) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
